@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Home from "./components/pages/Home";
-import Signup from "./components/Auth/SignUp";
-import Signin from "./components/Auth/SignIn";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Dashboard from "./components/pages/Dashboard";
-import VerifyOtp from "./components/Auth/VerifyOtp";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
+import Dashboard from "./components/Dashboard";
+import VerifyOtp from "./components/VerifyOtp";
 
 const App = () => {
   return (
@@ -13,8 +12,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signin />} />
+        <Route path="/signin" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/verify-otp" element={<VerifyOtp />} />
       </Routes>
