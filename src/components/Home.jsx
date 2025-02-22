@@ -17,12 +17,14 @@ const Home = () => {
     click the video below to see how it works.👇
     <br />
     🎥🎞️🎞️🎞️🎞️
-    <video 
-    src="/20250222-0935-49.5239066.mp4" 
+    <iframe 
+    className="mt-4 border border-gray-400 rounded-lg shadow-lg"
+    width="560" height="315" src="https://www.youtube.com/embed/OXk-q67gJJ0?si=b2XHmaphjzndPZpb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    {/* <video 
+    src="https://youtu.be/OXk-q67gJJ0" 
     width={550} 
     controls 
-    className="mt-4 border border-gray-400 rounded-lg shadow-lg"
-  ></video>
+  ></video> */}
     
   </p>
 </div>
