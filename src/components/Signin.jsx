@@ -16,7 +16,7 @@ const Signin = () => {
       const res = await axios.post("http://localhost:5000/api/auth/signin", formData);
       localStorage.setItem("token", res.data.token);
       alert(res.data.message || "Login Successful");
-      navigate("/dashbord"); 
+      navigate("/profile"); 
     } catch (error) {
       alert("Error: " + (error.response?.data?.error || "Invalid credentials"));
       navigate("/signup"); 

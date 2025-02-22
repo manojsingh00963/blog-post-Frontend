@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
-import Dashboard from "./components/Dashboard";
+import BlogerProfile from "./components/BlogerProfile";
 import VerifyOtp from "./components/VerifyOtp";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signin />} />
         <Route path="/signin" element={<Signup />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<BlogerProfile />} />
         <Route path="/verify-otp" element={<VerifyOtp />} />
       </Routes>
     </Router>
